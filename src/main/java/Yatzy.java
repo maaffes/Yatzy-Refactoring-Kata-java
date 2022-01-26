@@ -19,12 +19,7 @@ public class Yatzy {
 	}
 
 	public int yatzy() {
-		for (int value : dice) {
-			if (getFrequency(value) == 5) {
-				return 50;
-			}
-		}
-		return 0;
+			return getFrequency(dice.get(0)) == 5?50:0;
 	}
 
 	public int placed_on(int placed) {
